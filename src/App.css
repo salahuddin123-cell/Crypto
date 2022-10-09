@@ -1,0 +1,29 @@
+.total p{
+margin: 25px;
+width: 400px;
+color: white;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav li{
+
+   margin-top: 8px;
+   
+    border-radius: 2px;
+    color: blanchedalmond;
+padding: 2px;
+    
+}
+.nav li:hover{
+    border-bottom: 2px solid blueviolet;
+    background: white;
+    transition: all 150ms;
+    color: black;
+}
+.open{
+    display: none;
+}
+.close{
+    display: block;
+}
