@@ -17,6 +17,7 @@ const Home = () => {
   useEffect(()=>{
     setCoin(data!=null?data.data.coins:null)
     setStats(data!=null?data.data.stats:null)
+    
   //  console.log(data)
   },[data])
   
