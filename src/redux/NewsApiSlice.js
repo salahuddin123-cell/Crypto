@@ -14,7 +14,7 @@ export const newsSlice = createApi({
     }),
     endpoints: (builder) => ({
         getNews: builder.query({
-            query: ({category}) => createRequest(`https://newsapi.org/v2/everything?q=tesla&from=2024-07-05&sortBy=publishedAt&apiKey=f0c3d57a81464c7bb27ef68bb0138a26`)
+            query: ({category}) => createRequest(`https://newsapi.org/v2/everything?q=Apple&from=2024-08-05&sortBy=popularity&apiKey=f0c3d57a81464c7bb27ef68bb0138a26`)
         }),
        
     })
