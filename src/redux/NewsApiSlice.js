@@ -10,11 +10,11 @@ export const newsSlice = createApi({
 
     reducerPath: 'newsSlice',
     baseQuery: fetchBaseQuery({
-        baseUrl:'https://bing-news-search1.p.rapidapi.com/news'
+        baseUrl:'https://newsapi.org/v2/everything'
     }),
     endpoints: (builder) => ({
         getNews: builder.query({
-            query: ({category}) => createRequest(`https://bing-news-search1.p.rapidapi.com/news/search?q=${category}&freshness=Day&textFormat=Raw&safeSearch=Off&count=10`)
+            query: ({category}) => createRequest(`https://newsapi.org/v2/everything?q=Apple&from=2024-08-05&sortBy=popularity&apiKey=f0c3d57a81464c7bb27ef68bb0138a26`)
         }),
        
     })
