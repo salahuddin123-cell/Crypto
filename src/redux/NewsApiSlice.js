@@ -5,7 +5,7 @@ const newsApiHeaders = {
     'X-RapidAPI-Key': process.env.REACT_APP_NEWS_KEY,
     'X-RapidAPI-Host': 'bing-news-search1.p.rapidapi.com'
 }
-const createRequest = (url) => ({ url, headers: newsApiHeaders })
+const createRequest = (url) => ({ url})
 export const newsSlice = createApi({
 
     reducerPath: 'newsSlice',
