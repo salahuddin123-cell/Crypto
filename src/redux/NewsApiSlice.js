@@ -9,11 +9,11 @@ export const newsSlice = createApi({
 
     reducerPath: 'newsSlice',
     baseQuery: fetchBaseQuery({
-        baseUrl:'https://google-news13.p.rapidapi.com/search'
+        baseUrl:'https://google-news13.p.rapidapi.com/search?keyword=cryptocurrency'
     }),
     endpoints: (builder) => ({
         getNews: builder.query({
-            query: ({category}) => createRequest(`https://google-news13.p.rapidapi.com/search/{categpory}`)
+            query: ({category}) => createRequest(`https://google-news13.p.rapidapi.com/search?keyword=${category}`)
         }),
        
     })

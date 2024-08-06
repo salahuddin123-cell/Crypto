@@ -28,7 +28,7 @@ const style= !open?'visible':'hidden'
   <div className={` flex-col md:flex-row gap-2 md:gap-12  ${open?'flex':'hidden'} md:flex  py-2 md:py-0 m-auto md:m-0` }>
        <li><Link to='/'>Home</Link></li>
         <li><Link to='/allcrypto'>Crypto Currencies</Link></li>
-        <li><Link to='/news'>News</Link></li>
+       
  
     </div>
    

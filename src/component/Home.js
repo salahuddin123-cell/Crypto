@@ -58,7 +58,7 @@ const Home = () => {
     
     </div>
     <div className='flex justify-end text-white mr-10'><Link to="/allcrypto" className='bg-btncolor rounded-r-md p-2'>See other currencies..</Link></div>
-  <div className='flex justify-center text-white text-2xl'>  <h1 >Read the latest news</h1></div>
+  {/* <div className='flex justify-center text-white text-2xl'>  <h1 >Read the latest news</h1></div>
     <div className=' p-4 m-auto flex gap-4 justify-center items-center flex-col md:flex-row flex-wrap'>
  {newsdata?.value.slice(0,6).map((elem,i)=>{
   return <div key={i} className='flex flex-col p-4 border rounded-sm h-56  overflow-hidden w-7/12 md:w-3/12 bg-white'>
@@ -71,7 +71,7 @@ const Home = () => {
  })}
 
     </div>
-    <div className='flex justify-end text-white mr-10'><Link to="/news" className='bg-btncolor rounded-r-md p-2'>Read more news..</Link></div>
+    <div className='flex justify-end text-white mr-10'><Link to="/news" className='bg-btncolor rounded-r-md p-2'>Read more news..</Link></div> */}
     
     </div>:<div className='grid place-items-center mt-20'> <ClipLoader
         color={'red'}

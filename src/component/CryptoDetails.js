@@ -38,8 +38,8 @@ const CryptoDetails = () => {
             }
             
         }
-        setpriceList(priceList !== [] ? priceList.reverse() : null)
-        setdateList(dateList !== [] ? dateList.reverse() : null)
+        setpriceList(priceList != [] ? priceList.reverse() : null)
+        setdateList(dateList != [] ? dateList.reverse() : null)
     }, [coinDetails, data, prices, timePeriod, uuid])
 
     return (
@@ -82,7 +82,7 @@ const CryptoDetails = () => {
 
                 />
             </div>
-            <div className='flex items-center justify-center text-white text-2xl'>
+            {/* <div className='flex items-center justify-center text-white text-2xl'>
                 <h1>Top {details?.name||''} news from Today</h1>
             </div>
             <div className=' p-4 m-auto flex gap-4 justify-center items-center flex-col md:flex-row flex-wrap'>
@@ -95,7 +95,7 @@ const CryptoDetails = () => {
      <small className='py-2'>{elem.description}</small>
   </div>
  })}
-    </div>
+    </div> */}
         </div>:<div className='grid place-items-center mt-20'> <ClipLoader
         color={'red'}
         loading={true}

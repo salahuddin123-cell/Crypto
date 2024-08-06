@@ -15,13 +15,13 @@ const News = () => {
     <div className='mt-10'>
     <div className='grid place-items-center text-white text-2xl'>  <h1 >Top cryptocurrency news</h1></div>
     <div className=' p-4 m-auto   flex gap-4 justify-center items-center flex-col md:flex-row flex-wrap'>
- {data?.articles?.map((elem,i)=>{
+ {data?.items?.map((elem,i)=>{
   return <div key={i} className='flex flex-col p-4 border rounded-sm  h-60 overflow-hidden  w-9/12 md:w-3/12 bg-white'>
     <div className='flex flex-row'>
-       <a className='font-bold' href={elem.url}>{elem.title}</a>
-     <img className='rounded-sm' src={elem.articlesarticlesarticles} alt="nill" />
+       <a className='font-bold' href={elem.newsUrl}>{elem.title}</a>
+       {elem.images.thumbnailProxied&& <img className='rounded-full h-32 w-32' src={elem.images.thumbnailProxied}/>}
      </div>
-     <small className='py-2'>{elem.description}</small>
+     <small className='py-2'>{elem.snippet}</small>
   </div>
  })}
     </div></div>:<div className='grid place-items-center mt-20'> <ClipLoader
